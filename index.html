@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://images.icon-icons.com/896/PNG/512/pokemon_go_play_game_cinema_film_movie_icon-icons.com_69163.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pokemon Search App</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <header>
+      <h1>Pokémon Search App</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form
+          class="search-container"
+          id="search-form"
+          role="search"
+          aria-label="Search Pokémon"
+        >
+          <label for="search-input">Search Pokémon by Name or ID:</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Example: Pikachu"
+            aria-label="Search Pokémon"
+            required
+          />
+          <button id="search-button"><i class="fa fa-search"></i></button>
+        </form>
+        <section class="pokemon-info">
+          <div>
+            <header>
+              <h2 id="pokemon-name"></h2>
+              <p id="pokemon-id"></p>
+            </header>
+            <div class="pokemon-physic">
+              <p id="weight"></p>
+              <p id="height"></p>
+            </div>
+          </div>
+          <div class="pokemon-image">
+            <img id="sprite" src="" />
+            <div id="types"></div>
+          </div>
+          <div class="stats-container">
+            <div class="stats">
+              <h3>HP</h3>
+              <p id="hp"></p>
+            </div>
+            <div class="stats">
+              <h3>Attack</h3>
+              <p id="attack"></p>
+            </div>
+            <div class="stats">
+              <h3>Defense</h3>
+              <p id="defense"></p>
+            </div>
+            <div class="stats">
+              <h3>Special Attack</h3>
+              <p id="special-attack"></p>
+            </div>
+            <div class="stats">
+              <h3>Special Defense</h3>
+              <p id="special-defense"></p>
+            </div>
+            <div class="stats">
+              <h3>Speed</h3>
+              <p id="speed"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
